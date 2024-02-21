@@ -15,13 +15,13 @@ import axios from 'axios';
 import Enquiries from './components/Enquiries';
 
 function App() {
-  // State to store house data
+  // State to store house data check
   let [houseData, setHouseData] = useState([]);
 
   // Fetch house data on component mount
   useEffect(() => {
     let fetchData = async () => {
-      console.log("env" + process.env.REACT_APP_BACKEND_URL);
+      console.log("env " + process.env.REACT_APP_BACKEND_URL);
       // Fetching house data from the backend server using axios
       let response = await axios.get(process.env.REACT_APP_BACKEND_URL + "houses");
       console.log(response);
