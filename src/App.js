@@ -18,7 +18,7 @@ function App() {
   // State to store house data check
   let [houseData, setHouseData] = useState([]);
 
-  // Fetch house data on component mount
+  // Fetch house data on component mount chan
   useEffect(() => {
     let fetchData = async () => {
       console.log("env " + process.env.REACT_APP_BACKEND_URL);
