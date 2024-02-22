@@ -18,11 +18,11 @@ function App() {
   // State to store house data check
   let [houseData, setHouseData] = useState([]);
 
-  // Fetch house data on component mount chan
+  // Fetch house data on component mount chan 
   useEffect(() => {
     let fetchData = async () => {
       console.log("env " + process.env.REACT_APP_BACKEND_URL);
-      // Fetching house data from the backend server using axios
+      // Fetching house data from the backend server using axios k
       let response = await axios.get(process.env.REACT_APP_BACKEND_URL + "houses");
       console.log(response);
       setHouseData(response.data); // Setting fetched data to state
